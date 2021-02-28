@@ -22,7 +22,8 @@
             "timezone": {
                 "offset": "+1:00",
                 "description": "Brussels, Copenhagen, Madrid, Paris"
-            }
+            },
+            "salary": 800
         },
         "email": "isla.koistinen@example.com",
         "login": {
@@ -78,7 +79,8 @@
             "timezone": {
                 "offset": "+9:00",
                 "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
-            }
+            },
+            "salary": 700
         },
         "email": "victor.darocha@example.com",
         "login": {
@@ -134,7 +136,8 @@
             "timezone": {
                 "offset": "+6:00",
                 "description": "Almaty, Dhaka, Colombo"
-            }
+            },
+            "salary": 850
         },
         "email": "emeline.roy@example.com",
         "login": {
@@ -190,7 +193,8 @@
             "timezone": {
                 "offset": "-9:00",
                 "description": "Alaska"
-            }
+            },
+            "salary": 830
         },
         "email": "mhn.ysmy@example.com",
         "login": {
@@ -246,7 +250,8 @@
             "timezone": {
                 "offset": "-9:00",
                 "description": "Alaska"
-            }
+            },
+            "salary": 600
         },
         "email": "luisa.fernandez@example.com",
         "login": {
@@ -302,7 +307,8 @@
             "timezone": {
                 "offset": "-6:00",
                 "description": "Central Time (US & Canada), Mexico City"
-            }
+            },
+            "salary": 650
         },
         "email": "anatole.rey@example.com",
         "login": {
@@ -358,7 +364,8 @@
             "timezone": {
                 "offset": "-10:00",
                 "description": "Hawaii"
-            }
+            },
+            "salary": 730
         },
         "email": "gusmao.desouza@example.com",
         "login": {
@@ -414,7 +421,8 @@
             "timezone": {
                 "offset": "-12:00",
                 "description": "Eniwetok, Kwajalein"
-            }
+            },
+            "salary": 780
         },
         "email": "leon.charles@example.com",
         "login": {
@@ -470,7 +478,8 @@
             "timezone": {
                 "offset": "+9:00",
                 "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
-            }
+            },
+            "salary": 840
         },
         "email": "louise.hall@example.com",
         "login": {
@@ -526,7 +535,8 @@
             "timezone": {
                 "offset": "+2:00",
                 "description": "Kaliningrad, South Africa"
-            }
+            },
+            "salary": 850
         },
         "email": "tilde.kristensen@example.com",
         "login": {
@@ -582,7 +592,8 @@
             "timezone": {
                 "offset": "+9:30",
                 "description": "Adelaide, Darwin"
-            }
+            },
+            "salary": 560
         },
         "email": "alice.kennedy@example.com",
         "login": {
@@ -638,7 +649,8 @@
             "timezone": {
                 "offset": "-3:00",
                 "description": "Brazil, Buenos Aires, Georgetown"
-            }
+            },
+            "salary": 810
         },
         "email": "kathryn.murphy@example.com",
         "login": {
@@ -694,7 +706,8 @@
             "timezone": {
                 "offset": "+7:00",
                 "description": "Bangkok, Hanoi, Jakarta"
-            }
+            },
+            "salary": 690
         },
         "email": "cecil.curtis@example.com",
         "login": {
@@ -750,7 +763,8 @@
             "timezone": {
                 "offset": "+3:00",
                 "description": "Baghdad, Riyadh, Moscow, St. Petersburg"
-            }
+            },
+            "salary": 650
         },
         "email": "anna.roberts@example.com",
         "login": {
@@ -806,7 +820,8 @@
             "timezone": {
                 "offset": "-1:00",
                 "description": "Azores, Cape Verde Islands"
-            }
+            },
+            "salary": 780
         },
         "email": "clayton.cooper@example.com",
         "login": {

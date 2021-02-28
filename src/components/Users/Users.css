@@ -1,0 +1,13 @@
+.users-container{
+    display: flex;
+}
+.users{
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.added-users{
+    flex: 1;
+}

@@ -11,11 +11,7 @@ const Users = () => {
             return {...user, salary:(Math.round(Math.random()*10000))}
         })))
     }, [])
-    // const newUsers = users.map(user => {
-    //     return {...user, salary:(Math.random().toFixed(3)*10000)}
-    // })
-    // setUsers(newUsers);
-    // console.log(newUsers);
+
     const [addUsers, setAddUsers] = useState([])
     const addUserHandler = (user) => {
         setAddUsers([...addUsers, user]);
@@ -34,12 +30,10 @@ const Users = () => {
                         ></User>)
                 }
             </div>
-            <div className="added-users">
-                <AddedUsers 
+            <AddedUsers 
                 addUsers={addUsers}
                 removeUser={removeUser}
                 />
-            </div>
         </div>
     );
 };

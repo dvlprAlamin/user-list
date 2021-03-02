@@ -12,7 +12,7 @@ const User = ({user,addUserHandler}) => {
                 <h3><FontAwesomeIcon className='icons' icon={faUser} /> {name.first+ ' '+ name.last}</h3>
                 <h4><FontAwesomeIcon className='icons' icon={faEnvelope} /> {email}</h4>
                 <h4><FontAwesomeIcon className='icons' icon={faPhone} /> {cell}</h4>
-                <h4><FontAwesomeIcon className='icons' icon={faMoneyCheck} />  ${salary}</h4>
+                <h4><FontAwesomeIcon className='icons' icon={faMoneyCheck} /> ${salary}</h4>
             </div>
             <button disabled={isClicked} onClick={() => {
                 addUserHandler(user)

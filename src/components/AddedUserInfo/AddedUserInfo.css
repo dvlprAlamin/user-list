@@ -1,14 +1,23 @@
 .added{
-    display: flex;
-    flex-direction: column;
+    /* margin: .5rem 0;
+    padding: 0 1rem; */
 }
-.added-users{
-    display: flex;
+.added-users-info{
     width: 100%;
+    background: linear-gradient(90deg,#025955,#00917c);
+    color: #fff;
+    display: flex;
     justify-content: space-between;
-    border: 1px solid lightblue;
-    margin-top: 1rem;
-    padding:0 1rem;
+    margin: 1rem 0;
+    padding-right: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.added-users-info:hover{
+    /* transform: scale(1.1); */
+    transform: translate(2px);
+    transition: .5s linear;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 }
 button{
     border: 0;

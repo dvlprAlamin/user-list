@@ -5,7 +5,7 @@ const AddedUserInfo = ({addUsers, removeUser}) => {
         <div className='added'>
             {
                 addUsers.map(user => 
-                <div  key={user.name?.first}  className='added-users'>
+                <div  key={user.cell}  className='added-users-info'>
                     <img src={user.picture?.thumbnail} alt=""/>
                     <h5>{user.name?.first +' '+user.name?.last}</h5>
                     <button onClick={() => removeUser(user.cell)}>✖</button>

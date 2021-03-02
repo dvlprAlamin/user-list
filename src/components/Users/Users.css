@@ -2,12 +2,26 @@
     display: flex;
 }
 .users{
-    flex: 4;
+    flex: 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
 }
-.added-users{
-    flex: 1;
+@media (max-width:1200px){
+    .users{
+        flex: 2;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:900px){
+    .users{
+        flex: 1;
+        grid-template-columns:  1fr;
+    }
+}
+@media (max-width:580px){
+    .users-container{
+        flex-direction: column-reverse;
+    }
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import './AddedUserInfo.css'
-const AddedUserInfo = (props) => {
+const AddedUserInfo = ({addUsers, removeUser}) => {
     return (
         <div className='added'>
             {
-                props.addedUser.map(user => 
+                addUsers.map(user => 
                 <div  key={user.name?.first}  className='added-users'>
-                    <img src={user.img?.thumbnail} alt=""/>
+                    <img src={user.picture?.thumbnail} alt=""/>
                     <h5>{user.name?.first +' '+user.name?.last}</h5>
-                    <button>✖</button>
+                    <button onClick={() => removeUser(user.cell)}>✖</button>
                 </div>)
             }
         </div>

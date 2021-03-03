@@ -12,19 +12,19 @@
     flex: 1;
     background: #fff;
 }
-@media (max-width:1200px){
+@media (max-width:1250px){
     .users{
         flex: 2;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width:900px){
+@media (max-width:960px){
     .users{
         flex: 1;
         grid-template-columns:  1fr;
     }
 }
-@media (max-width:580px){
+@media (max-width:630px){
     .users-container{
         flex-direction: column-reverse;
     }

@@ -11,8 +11,8 @@ const User = ({user,addUserHandler}) => {
             <img src={picture.large} alt=""/>
             <div className="user-details">
                 <h3><FontAwesomeIcon className='icons' icon={faUser}/> {name.first+ ' '+ name.last}</h3>
-                <h4><FontAwesomeIcon className='icons' icon={faEnvelope}/> {email}</h4>
-                <h4><FontAwesomeIcon className='icons' icon={faPhone}/> {cell}</h4>
+                <h4><FontAwesomeIcon className='icons' icon={faEnvelope}/> <span className="email"> {email}</span></h4>
+                <h4><FontAwesomeIcon className='icons' icon={faPhone}/> <span  className="phone"> {cell}</span></h4>
                 <h4><FontAwesomeIcon className='icons' icon={faMoneyCheck}/> ${salary}</h4>
             </div>
             <button disabled={isClicked} onClick={() => {

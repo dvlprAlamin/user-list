@@ -13,7 +13,7 @@
 .user-count, .total-salary{
     margin: 10px 0;
 }
-@media (max-width:580px){
+@media (max-width:630px){
     .added-users{
         margin:0 1rem;
         max-height: 45vh;

@@ -1,0 +1,16 @@
+.warning-text{
+    position: fixed;
+    color: red;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 99;
+}
+@media (max-width:600px){
+    .warning-text{
+        font-size: .8rem;
+        bottom: 20%;
+    }
+}

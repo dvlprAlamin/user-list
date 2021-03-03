@@ -8,6 +8,10 @@
     gap: 1rem;
     padding: 1rem;
 }
+.users-added{
+    flex: 1;
+    background: #fff;
+}
 @media (max-width:1200px){
     .users{
         flex: 2;
@@ -23,5 +27,9 @@
 @media (max-width:580px){
     .users-container{
         flex-direction: column-reverse;
+    }
+    .users-added{
+        position: sticky;
+        top: 0;
     }
 }

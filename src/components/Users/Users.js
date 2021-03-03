@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Users.css';
 import User from './User';
 import AddedUsers from '../Added-users/AddedUsers';
+import Warning from '../Warning/Warning';
 const Users = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
@@ -15,9 +16,16 @@ const Users = () => {
     // const addUserHandler = (user) => {
     //     setAddUsers([...addUsers, user]);
     // }
-    
+    const [warning, setWarning] = useState('')
     const addUserHandler = user => {
-        addUsers.find(users => users === user ) ? setAddUsers(addUsers) : setAddUsers([...addUsers, user]);
+        if(addUsers.find(users => users === user )){
+            setAddUsers(addUsers);
+            setWarning(user.name?.first + ' ' + user.name?.last + ' already added')
+            // setTimeout(() => setWarning(''), 2000);
+        }
+        else{
+            setAddUsers([...addUsers, user]);
+        }
     }
 
 
@@ -27,6 +35,7 @@ const Users = () => {
     }
     return (
         <div className="users-container">
+            <Warning text={warning}/>
             <div className="users">
                 {
                     users.map(user => <User
@@ -36,10 +45,12 @@ const Users = () => {
                         ></User>)
                 }
             </div>
+            <div className="users-added">
             <AddedUsers 
                 addUsers={addUsers}
                 removeUser={removeUser}
                 />
+            </div>
         </div>
     );
 };

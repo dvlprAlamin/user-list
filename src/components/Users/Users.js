@@ -21,7 +21,7 @@ const Users = () => {
         if(addUsers.find(users => users === user )){
             setAddUsers(addUsers);
             setWarning(user.name?.first + ' ' + user.name?.last + ' already added')
-            // setTimeout(() => setWarning(''), 2000);
+            setTimeout(() => setWarning(''), 2000);
         }
         else{
             setAddUsers([...addUsers, user]);

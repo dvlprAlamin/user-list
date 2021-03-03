@@ -1,7 +1,3 @@
-.added{
-    /* margin: .5rem 0;
-    padding: 0 1rem; */
-}
 .added-users-info{
     width: 100%;
     background: linear-gradient(90deg,#025955,#00917c);
@@ -14,10 +10,9 @@
     overflow: hidden;
 }
 .added-users-info:hover{
-    /* transform: scale(1.1); */
-    transform: translate(2px);
-    transition: .5s linear;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+    transform: translate(4px);
+    transition: .2s linear;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 button{
     border: 0;

@@ -2,9 +2,25 @@
     border: 1px solid lightblue;
     padding: 1rem;
     text-align: center;
+    min-height: 390px;
 }
-.add-user{
-    height: 30px;
+.user-card{
+    background: linear-gradient(90deg,#025955,#00917c);
+    height: 100%;
+    max-width: 280px;
+    margin:0 auto;
+}
+.user-card:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: .4s;
+}
+.user-card img {
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+.add-user-btn{
+    height: 40px;
     width: 150px;
     background:lightseagreen;
     color: #ffffff;
@@ -12,12 +28,18 @@
     outline: 0;
     font-size: 1.1rem;
     cursor: pointer;
+    transform: rotateX(330deg);
+}
+.add-user-btn:hover{
+    transform: rotateX(0deg);
+    transition: .8s;
 }
 .user-details{
     text-align: left;
     margin: .5rem 1rem;
     font-size: .9rem;
-    color: #454647;
+    color: #fff;
+    word-wrap:break-word;
 }
 .user-details .icons{
     color: lightseagreen;

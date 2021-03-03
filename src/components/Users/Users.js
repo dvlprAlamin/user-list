@@ -11,13 +11,19 @@ const Users = () => {
             return {...user, salary:(Math.round(Math.random()*10000))}
         })))
     }, [])
-
     const [addUsers, setAddUsers] = useState([])
-    const addUserHandler = (user) => {
-        setAddUsers([...addUsers, user]);
+    // const addUserHandler = (user) => {
+    //     setAddUsers([...addUsers, user]);
+    // }
+    
+    const addUserHandler = user => {
+        addUsers.find(users => users === user ) ? setAddUsers(addUsers) : setAddUsers([...addUsers, user]);
     }
+
+
     const removeUser = cell => {
-        setAddUsers(addUsers.filter(user => user.cell !== cell))
+        setAddUsers(addUsers.filter(user => user.cell !== cell));
+
     }
     return (
         <div className="users-container">

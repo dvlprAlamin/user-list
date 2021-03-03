@@ -7,19 +7,22 @@ const User = ({user,addUserHandler}) => {
     const [ isClicked, setIsClicked ] =  useState(false);
     return (
         <div className="user">
+            <div className="user-card">
             <img src={picture.large} alt=""/>
             <div className="user-details">
-                <h3><FontAwesomeIcon className='icons' icon={faUser} /> {name.first+ ' '+ name.last}</h3>
-                <h4><FontAwesomeIcon className='icons' icon={faEnvelope} /> {email}</h4>
-                <h4><FontAwesomeIcon className='icons' icon={faPhone} /> {cell}</h4>
-                <h4><FontAwesomeIcon className='icons' icon={faMoneyCheck} /> ${salary}</h4>
+                <h3><FontAwesomeIcon className='icons' icon={faUser}/> {name.first+ ' '+ name.last}</h3>
+                <h4><FontAwesomeIcon className='icons' icon={faEnvelope}/> {email}</h4>
+                <h4><FontAwesomeIcon className='icons' icon={faPhone}/> {cell}</h4>
+                <h4><FontAwesomeIcon className='icons' icon={faMoneyCheck}/> ${salary}</h4>
             </div>
             <button disabled={isClicked} onClick={() => {
                 addUserHandler(user)
-                setIsClicked(true)
-                }} className="add-user">
-                    {isClicked ? '✔ User added' : "⊕ Add user"}
+                // setIsClicked(true)
+                }} className="add-user-btn">
+                    {/* {isClicked ? '✔ User added' : "⊕ Add user"} */}
+                    Add user
                     </button>
+            </div>
         </div>
     );
 };
